@@ -1,0 +1,6 @@
+openpyxl==3.0.5
+requests==2.25.1
+pandas==1.1.4
+looker_sdk==0.1.3b15
+urllib3==1.26.4
+Pillow==8.3.2
