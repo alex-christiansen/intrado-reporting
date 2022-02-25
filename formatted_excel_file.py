@@ -14,6 +14,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, Color, colors
 from openpyxl.utils import get_column_letter
 
+dashboard_id_to_format = '2'
 
 # disable warnings coming from self-signed SSL cert
 class formatted_excel:
@@ -107,5 +108,5 @@ class formatted_excel:
         self.format_columns()
 
 if __name__ == '__main__':
-    db = formatted_excel(dashboard_id='2', logo_location='logo.png', output_name='./pixel_perfect_with_class_v2.xlsx')
+    db = formatted_excel(dashboard_id=dashboard_id_to_format, logo_location='logo.png', output_name='./pixel_perfect_with_class_v2.xlsx')
     db.main()
