@@ -3,6 +3,9 @@ from looker_sdk import models
 import pandas as pd
 import os, zipfile, urllib3, requests
 
+zipped_files_name = '../Downloads/dashboard-business_pulse.zip' # change this to the location of your zipped dashboard
+output_file_name = 'tabbed_output.xlsx' # change output file name if you want
+
 class tabbed_excel:
     def __init__(self, dir, zipped_files, output_name):
         self.dir = dir
@@ -36,5 +39,5 @@ class tabbed_excel:
         self.write_files()
 
 if __name__ == '__main__':
-    db = tabbed_excel('./dashboard-business_pulse', '../Downloads/dashboard-business_pulse.zip', 'tabbed_output.xlsx')
+    db = tabbed_excel('./dashboard-business_pulse', zipped_files_name, output_file_name)
     db.main()

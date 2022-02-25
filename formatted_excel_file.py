@@ -107,5 +107,5 @@ class formatted_excel:
         self.format_columns()
 
 if __name__ == '__main__':
-    db = formatted_excel(dashboard_id='2', logo_location='logo.png', output_name='./pixel_perfect_with_class.xlsx')
+    db = formatted_excel(dashboard_id='2', logo_location='logo.png', output_name='./pixel_perfect_with_class_v2.xlsx')
     db.main()
