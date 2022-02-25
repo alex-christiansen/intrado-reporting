@@ -1,0 +1,7 @@
+[Looker]
+api_version=3.1
+base_url=https://hostname.cloud.looker.com:443
+# for jupyter@looker.com user, has admin credentials
+client_id=client_id
+client_secret=client_secret
+verify_ssl=True
